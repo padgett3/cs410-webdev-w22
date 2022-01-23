@@ -2,10 +2,28 @@
   --lightorange: rgba(255, 165, 0, 0.1);
 }
 
-.table-heading {
-  /* use green and white for the colors - these colors are defined in the styles.css file */
+table {
+  border: 1px solid var(--black);
 }
 
-.channel {
+thead {
+  /* use green and white for the colors - these colors are defined in the styles.css file */
+  color: var(--white);
+  background-color: var(--green);
+}
+
+td, th {
+  border: 1px solid var(--black);
+  height: 3em;
+  width: 200px;
+  padding: .75em
+}
+
+tr:hover {
+  background-color: var(--lightorange);
+}
+
+th[scope="row"] {
   /* use orange and black for the colors - these colors are defined in the styles.css file */
+  background-color: var(--orange);
 }

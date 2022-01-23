@@ -5,36 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>05 - Form</title>
-    <!-- <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../hw2/05-form.css" /> -->
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/05-form.css" />
   </head>
   <body>
     <main>
-      <form action="" method="post" name="registration form">
-        <h1>Registration Form</h1>
+      <form action="" method="post" name="registration form" class=form>
+        <h1 class=form-title >Registration Form</h1>
         <!-- Add your code here -->
-        <label for="username">Username:</label>
-        <input id="username" type="text" />
+        <label for="username" class=aligned-label>Username:</label>
+        <input id="username" type="text" class=form-input />
         <br /> <br />
-        <label for="email">Email:</label>
-        <input id="email" type="email" />
+        <label for="email" class=aligned-label>Email:</label>
+        <input id="email" type="email" class=form-input />
         <br /> <br />
-        <label for="password">Password:</label>
-        <input id="password" type="password" />
+        <label for="password" class=aligned-label>Password:</label>
+        <input id="password" type="password" class=form-input />
         <br /> <br />
         <fieldset>
           <legend>Would you like to sign up for the newsletter?</legend>
-          <input id="yes_register" type="radio" name="register_option" value="yes"/>
-          <label for="yes_register">Yes, sign me up</label>
-          <input id="no_register" type="radio" name="register_option" value="no"/>
-          <label for="no_register">No, thank you</label>
+          <div>
+            <input id="yes_register" type="radio" name="register_option" value="yes" class=radio-button />
+            <label for="yes_register">Yes, sign me up</label>
+          </div>
+          <div>
+            <input id="no_register" type="radio" name="register_option" value="no" class=radio-button />
+            <label for="no_register">No, thank you</label>
+          </div>
         </fieldset>
         <br />
-        <label for="register_date">Date:</label>
-        <input id="register_date" type="date" name="register_on"/>
-        <br /> <br />
-        <input type="submit" name="submit_button" value="Submit">
-        <input type="reset" name="reset_button" value="Reset">
+        <label for="register_date" class=aligned-label>Date:</label>
+        <input id="register_date" type="date" name="register_on" class=form-input />
+        <br /> 
+        <div class=btn>
+          <input type="submit" name="submit_button" value="Submit" class=btn-primary>
+          <input type="reset" name="reset_button" value="Reset" class=btn-secondary>
+        </div>
       </form>
     </main>
   </body>
