@@ -13,31 +13,34 @@
       <form action="" method="post" name="registration form" class=form>
         <h1 class=form-title >Registration Form</h1>
         <!-- Add your code here -->
-        <label for="username" class=aligned-label>Username:</label>
-        <input id="username" type="text" class=form-input />
-        <br /> <br />
-        <label for="email" class=aligned-label>Email:</label>
-        <input id="email" type="email" class=form-input />
-        <br /> <br />
-        <label for="password" class=aligned-label>Password:</label>
-        <input id="password" type="password" class=form-input />
-        <br /> <br />
+        <div class=form-field>
+          <label for="username" class=aligned-label>Username:</label>
+          <input id="username" type="text" />
+        </div>
+        <div class=form-field>
+          <label for="email" class=aligned-label>Email:</label>
+          <input id="email" type="email" />
+        </div>
+        <div class=form-field>
+          <label for="password" class=aligned-label>Password:</label>
+          <input id="password" type="password" />
+        </div>
         <fieldset>
           <legend>Would you like to sign up for the newsletter?</legend>
           <div>
-            <input id="yes_register" type="radio" name="register_option" value="yes" class=radio-button />
+            <input id="yes_register" type="radio" name="register_option" value="yes" />
             <label for="yes_register">Yes, sign me up</label>
           </div>
           <div>
-            <input id="no_register" type="radio" name="register_option" value="no" class=radio-button />
+            <input id="no_register" type="radio" name="register_option" value="no" />
             <label for="no_register">No, thank you</label>
           </div>
         </fieldset>
-        <br />
-        <label for="register_date" class=aligned-label>Date:</label>
-        <input id="register_date" type="date" name="register_on" class=form-input />
-        <br /> 
-        <div class=btn>
+        <div class=form-field >
+          <label for="register_date" class=aligned-label>Date:</label>
+          <input id="register_date" type="date" name="register_on" />
+        </div>
+        <div class="btn">
           <input type="submit" name="submit_button" value="Submit" class=btn-primary>
           <input type="reset" name="reset_button" value="Reset" class=btn-secondary>
         </div>
