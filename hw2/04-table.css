@@ -2,11 +2,11 @@
   --lightorange: rgba(255, 165, 0, 0.1);
 }
 
-table {
+.table {
   border: 1px solid var(--black);
 }
 
-thead {
+.table-head {
   /* use green and white for the colors - these colors are defined in the styles.css file */
   color: var(--white);
   background-color: var(--green);
