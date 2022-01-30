@@ -13,9 +13,48 @@
     <link rel="stylesheet" href="hw-styles.css" />
   </head>
   <body>
-    <main>
-      <form>
-        <h1>Contact Form</h1>
+    <main class="container mt-5">
+      <form class="bg-light border rounded mx-auto p-3" action="" method="post" name="registration form">
+        <h1 class="form-title mt-1">Contact Form</h1>
+        <div class="form-group row mt-4">
+          <label for="username" class="form-label col-md-4">Username:</label>
+          <div class="col-md-8">
+            <input type="text" class="form-control" id="username" />
+          </div>
+        </div>
+        <div class="form-group row mt-3">
+          <label for="email" class="form-label col-md-4">Email:</label>
+          <div class="col-md-8">
+            <input type="email" class="form-control" id="email" />
+          </div>
+        </div>
+        <div class="form-group row mt-3">
+          <label for="password" class="form-label col-md-4">Password:</label>
+          <div class="col-md-8">
+            <input type="password" class="form-control" id="password" />
+          </div>
+        </div>
+        <fieldset class="mt-3">
+          <legend class="col-form-label">Would you like to sign up for the newsletter?</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="yes-register" name="register-option" value="yes" />
+            <label class="form-check-label" for="yes-register">Yes, sign me up</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="no-register" name="register-option" value="no" />
+            <label class="form-check-label" for="no-register">No, thank you</label>
+          </div>
+        </fieldset>
+        <div class="form-group row mt-3">
+          <label for="register-date" class="form-label col-md-4">Date:</label>
+          <div class="col-md-8">
+            <input type="date" class="form-control" id="register-date" name="register-on" />
+          </div>
+        </div>
+        <div class="button-pair mt-4">
+          <input type="submit" class="btn btn-primary" name="submit-button" value="Submit" />
+          <input type="reset" class="btn btn-secondary" name="reset-button" value="Reset" />
+        </div>
       </form>
     </main>
   </body>
