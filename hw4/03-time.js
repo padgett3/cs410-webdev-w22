@@ -1,5 +1,36 @@
+const pluralize = (word, quantity) => {
+  if (quantity === 1) {
+    return word;
+  } else {
+    return word + "s";
+  }
+}
+
 const calculateTime = (date1, date2) => {
   // Given two dates, calculate and return the amount of time elapsed in years and months
+  date1 = (new Date(date1)).getTime();
+  date2 = (new Date(date2)).getTime();
+
+  if (Number.isNaN(date1) || Number.isNaN(date2)) {
+    return "Error: Invalid input provided.";
+  }
+
+  let diffMillis = Math.abs(date1 - date2);
+
+  // I'm afraid leap years are above my pay grade
+  let years = Math.floor(diffMillis/31556952000);
+  let months = Math.floor((diffMillis - years*31556952000)/2629800000);
+
+  // Build message string
+  let message = "Time elapsed: ";
+  if (years !== 0) {
+    message += years.toString() + pluralize(" year", years) + ", ";
+  }
+  if (months !== 0) {
+    message += months.toString() + pluralize(" month", months);
+  }
+
+  return message;
 };
 
 // Date() formats:

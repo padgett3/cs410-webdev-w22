@@ -5,12 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>05 - Form</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/05-form.css" />
     <script defer src="05-form.js"></script>
   </head>
   <body>
     <main>
-      <form class="form" action="">
-        <h1 class="title">Registration Form</h1>
+      <form action="" name="registration form" class=form>
+        <h1 class=form-title >Contact Form</h1>
+        <!-- Add your code here -->
+        <div class=form-field>
+          <label for="username" class=aligned-label>Username:</label>
+          <input id="username" type="text" />
+        </div>
+        <div class=form-field>
+          <label for="email" class=aligned-label>Email:</label>
+          <input id="email" type="email" />
+        </div>
+        <div class=form-field>
+          <label for="password" class=aligned-label>Password:</label>
+          <input id="password" type="password" />
+        </div>
+        <fieldset>
+          <legend>Would you like to sign up for the newsletter?</legend>
+          <div>
+            <input id="yes-register" type="radio" name="register-option" value="yes" />
+            <label for="yes-register">Yes, sign me up</label>
+          </div>
+          <div>
+            <input id="no-register" type="radio" name="register-option" value="no" />
+            <label for="no-register">No, thank you</label>
+          </div>
+        </fieldset>
+        <div class=form-field >
+          <label for="register-date" class=aligned-label>Date:</label>
+          <input id="register-date" type="date" name="register-on" />
+        </div>
+        <div class="btn">
+          <input type="submit" name="submit_button" value="Submit" class=btn-primary>
+          <input type="reset" name="reset_button" value="Reset" class=btn-secondary>
+        </div>
       </form>
     </main>
   </body>
