@@ -17,6 +17,7 @@ const addDrinkToDOM = (drink) => {
   element.append(label);
 
   app.append(element);
+  app.classList.add("results-grid");
 }
 
 const fetchData = (url) => {

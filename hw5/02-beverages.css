@@ -27,27 +27,22 @@ h1 {
   font-weight: 600;
 }
 
-#results {
+.results-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0rem 1rem;
   padding: 0em 2em 1em 2em;
 }
 
-#results>img, #results>p {
-  place-self: center;
-  grid-column-start: 2;
-}
-
 @media (min-width: 768px) {
-  #results {
+  .results-grid {
     grid-template-columns: 1fr 1fr;
-    padding: 0em 3em 1em 3em;
+    padding: 0em 3em 2em 3em;
   }
 }
 
 @media (min-width: 1024px) {
-  #results {
+  .results-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
