@@ -1,6 +1,8 @@
 #loading {
   width: 80px;
   height: 80px;
+  place-self: center;
+  grid-column-start: 2;
 }
 
 .figure {
@@ -18,7 +20,7 @@ h1 {
   font-weight: 600;
 }
 
-.figure .thumb {
+.figure img {
   max-width: 100%;
 }
 

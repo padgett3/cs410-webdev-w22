@@ -7,10 +7,8 @@ const addDrinkToDOM = (drink) => {
   let thumb = document.createElement('img');
   thumb.setAttribute("src", drink.strDrinkThumb);
   thumb.setAttribute("alt", "Photo of drink: " + drink.strDrink);
-  thumb.setAttribute("class", "thumb");
 
   let label = document.createElement('figcaption');
-  label.setAttribute("class", "caption")
   label.textContent = drink.strDrink;
 
   let element = document.createElement('figure');
