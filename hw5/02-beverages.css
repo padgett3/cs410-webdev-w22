@@ -1,13 +1,10 @@
 #loading {
   width: 80px;
   height: 80px;
-  place-self: center;
-  grid-column-start: 2;
 }
 
 .figure {
   border: 0.5rem solid var(--white);
-  /*width: 200px;*/
 }
 
 .figure:hover {
@@ -35,6 +32,11 @@ h1 {
   grid-template-columns: 1fr;
   gap: 0rem 1rem;
   padding: 0em 2em 1em 2em;
+}
+
+#results>img, #results>p {
+  place-self: center;
+  grid-column-start: 2;
 }
 
 @media (min-width: 768px) {
